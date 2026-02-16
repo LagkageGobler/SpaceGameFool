@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://coc857ylasmf6"]
+
+[ext_resource type="Texture2D" uid="uid://bjumgm38goq7v" path="res://rumskip/star sky.jpg" id="1_5blmm"]
+[ext_resource type="Texture2D" uid="uid://d4yufcrap60f" path="res://rumskip/mellem maget.png" id="2_wljqy"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StarSky" type="Sprite2D" parent="."]
+position = Vector2(-7, 8)
+texture = ExtResource("1_5blmm")
+
+[node name="MellemMaget" type="Sprite2D" parent="."]
+position = Vector2(574, 174)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_wljqy")

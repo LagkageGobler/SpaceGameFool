@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://vhxsq56mka4d"]
+
+[ext_resource type="Texture2D" uid="uid://837huuusf5k3" path="res://rumskip/moon.png" id="1_eyo2r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_imn16"]
+size = Vector2(1603.5, 179.75)
+
+[node name="moon" type="Node2D"]
+
+[node name="Moon" type="Sprite2D" parent="."]
+position = Vector2(781, 289)
+texture = ExtResource("1_eyo2r")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-12, 553)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(796.75, 117.875)
+shape = SubResource("RectangleShape2D_imn16")

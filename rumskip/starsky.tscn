@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnmw81cntovpn"]
+
+[ext_resource type="Texture2D" uid="uid://bjumgm38goq7v" path="res://rumskip/star sky.jpg" id="1_tv8vy"]
+
+[node name="starsky" type="Node2D"]
+
+[node name="StarSky" type="Sprite2D" parent="."]
+position = Vector2(949, 73.5)
+scale = Vector2(0.871333, 0.8495)
+texture = ExtResource("1_tv8vy")
