@@ -7,16 +7,16 @@
 size = Vector2(1200, 1400)
 
 [node name="Rumskib" type="CharacterBody2D"]
+position = Vector2(539, 28)
 script = ExtResource("1_2n5lm")
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(565, 43)
+position = Vector2(0.800049, -0.499996)
 scale = Vector2(0.03, 0.03)
 shape = SubResource("RectangleShape2D_lykot")
-metadata/_edit_lock_ = true
 
 [node name="FlotRumskip" type="Sprite2D" parent="."]
-position = Vector2(564, 48)
+position = Vector2(-0.199951, 4.5)
 scale = Vector2(0.03, 0.03)
 texture = ExtResource("1_i6sr4")
-metadata/_edit_lock_ = true
