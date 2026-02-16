@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://drt3r25c5eq3k"]
+
+[ext_resource type="Script" path="res://rumskib.gd" id="1_2n5lm"]
+[ext_resource type="Texture2D" uid="uid://bt6fwsdkhei3e" path="res://rumskip/flot rumskip.png" id="1_i6sr4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lykot"]
+size = Vector2(1200, 1400)
+
+[node name="Rumskib" type="CharacterBody2D"]
+script = ExtResource("1_2n5lm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(565, 43)
+scale = Vector2(0.03, 0.03)
+shape = SubResource("RectangleShape2D_lykot")
+metadata/_edit_lock_ = true
+
+[node name="FlotRumskip" type="Sprite2D" parent="."]
+position = Vector2(564, 48)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("1_i6sr4")
+metadata/_edit_lock_ = true
