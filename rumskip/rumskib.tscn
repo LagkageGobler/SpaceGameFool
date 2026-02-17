@@ -1,7 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://drt3r25c5eq3k"]
+[gd_scene load_steps=16 format=3 uid="uid://drt3r25c5eq3k"]
 
 [ext_resource type="Script" path="res://rumskib.gd" id="1_2n5lm"]
 [ext_resource type="Texture2D" uid="uid://bt6fwsdkhei3e" path="res://rumskip/flot rumskip.png" id="1_i6sr4"]
+[ext_resource type="Texture2D" uid="uid://d4hp33v2pdibo" path="res://rumskip/flot rumskip venstre.png" id="3_r1wnv"]
+[ext_resource type="Texture2D" uid="uid://dxn8c7dvqeimg" path="res://rumskip/lavt thrust.png" id="4_ht015"]
+[ext_resource type="Texture2D" uid="uid://dkasn72thbtmn" path="res://rumskip/lavt thrust venstre.png" id="5_ffhuo"]
+[ext_resource type="Texture2D" uid="uid://brxigdp6stiup" path="res://rumskip/lavt thrust højre.png" id="6_yynao"]
+[ext_resource type="Texture2D" uid="uid://bwlpvdpod6kl0" path="res://rumskip/mellem lidt.png" id="7_m3x5k"]
+[ext_resource type="Texture2D" uid="uid://bmmod442fycs" path="res://rumskip/mellem lidt venstre.png" id="8_lp6es"]
+[ext_resource type="Texture2D" uid="uid://b0ftamyegsyfu" path="res://rumskip/mellem lidt højre.png" id="9_gp51o"]
+[ext_resource type="Texture2D" uid="uid://d4yufcrap60f" path="res://rumskip/mellem maget.png" id="10_xo45w"]
+[ext_resource type="Texture2D" uid="uid://bolxoo7gey8qb" path="res://rumskip/mellem maget venstre.png" id="11_v1ncu"]
+[ext_resource type="Texture2D" uid="uid://camnvx8ahiuq7" path="res://rumskip/mellem maget højre.png" id="12_n8fvh"]
+[ext_resource type="Texture2D" uid="uid://der2foj545gvs" path="res://rumskip/fuldthrust.png" id="13_8qed2"]
+[ext_resource type="Texture2D" uid="uid://dbyibio2n3agi" path="res://rumskip/fuldthrust venstre.png" id="14_d4r7y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lykot"]
 size = Vector2(1200, 1400)
@@ -21,3 +33,63 @@ shape = SubResource("RectangleShape2D_lykot")
 position = Vector2(-0.199951, 4.5)
 scale = Vector2(0.03, 0.03)
 texture = ExtResource("1_i6sr4")
+
+[node name="FlotRumskipVenstre" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 5)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_r1wnv")
+
+[node name="LavtThrust" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 5)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("4_ht015")
+
+[node name="LavtThrustVenstre" type="Sprite2D" parent="."]
+position = Vector2(-1.90735e-06, 5)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_ffhuo")
+
+[node name="LavtThrustHøjre" type="Sprite2D" parent="."]
+position = Vector2(-7.62939e-06, 5)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("6_yynao")
+
+[node name="MellemLidt" type="Sprite2D" parent="."]
+position = Vector2(-1.90735e-06, 5)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("7_m3x5k")
+
+[node name="MellemLidtVenstre" type="Sprite2D" parent="."]
+position = Vector2(-7.62939e-06, 5)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("8_lp6es")
+
+[node name="MellemLidtHøjre" type="Sprite2D" parent="."]
+position = Vector2(-7.62939e-06, 5)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("9_gp51o")
+
+[node name="MellemMaget" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 5)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("10_xo45w")
+
+[node name="MellemMagetVenstre" type="Sprite2D" parent="."]
+position = Vector2(-7.62939e-06, 5)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("11_v1ncu")
+
+[node name="MellemMagetHøjre" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 5)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("12_n8fvh")
+
+[node name="Fuldthrust" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 6)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("13_8qed2")
+
+[node name="FuldthrustVenstre" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 6)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("14_d4r7y")

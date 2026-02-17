@@ -1,15 +1,14 @@
 extends CharacterBody2D
-
-var Sidethrust = 0
+var sprite = 0
 var Thrust = 0
-const Gravity = 1
+const Gravity = 20
 
 func _ready() -> void:
 	velocity.x += randf_range(-50,60)
 
 func _physics_process(delta: float) -> void:
-	velocity.y += Gravity
-	velocity += Vector2.UP.rotated(rotation) * Thrust
+	velocity.y += Gravity * delta
+	velocity += Vector2.UP.rotated(rotation) * Thrust * delta
 	move_and_slide()
 
 
@@ -22,4 +21,7 @@ func _process(delta: float) -> void:
 		rotation_degrees += 1
 	elif Input.is_action_pressed("Leftthrust"):
 		rotation_degrees -= 1
+	if Thrust == 0:
+		hide()
+		show()
 	
