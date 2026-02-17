@@ -8,6 +8,7 @@ size = Vector2(1200, 1400)
 
 [node name="Rumskib" type="CharacterBody2D"]
 position = Vector2(539, 28)
+motion_mode = 1
 script = ExtResource("1_2n5lm")
 metadata/_edit_lock_ = true
 
