@@ -8,3 +8,87 @@
 position = Vector2(949, 73.5)
 scale = Vector2(0.871333, 0.8495)
 texture = ExtResource("1_tv8vy")
+
+[node name="StarSky2" type="Sprite2D" parent="."]
+position = Vector2(3740, 248)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky3" type="Sprite2D" parent="."]
+position = Vector2(2483, -1713)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky4" type="Sprite2D" parent="."]
+position = Vector2(-305, -1783)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky5" type="Sprite2D" parent="."]
+position = Vector2(-1683, -101)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky6" type="Sprite2D" parent="."]
+position = Vector2(2165, 1690)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky7" type="Sprite2D" parent="."]
+position = Vector2(-628, 1500)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky8" type="Sprite2D" parent="."]
+position = Vector2(-3014, -1384)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky9" type="Sprite2D" parent="."]
+position = Vector2(-2938, -3197)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky10" type="Sprite2D" parent="."]
+position = Vector2(-4207, 80)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky11" type="Sprite2D" parent="."]
+position = Vector2(-311, -3363)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky12" type="Sprite2D" parent="."]
+position = Vector2(2468, -3393)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky13" type="Sprite2D" parent="."]
+position = Vector2(5413, -1505)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky14" type="Sprite2D" parent="."]
+position = Vector2(5337, -2880)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky15" type="Sprite2D" parent="."]
+position = Vector2(6380, -10)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky16" type="Sprite2D" parent="."]
+position = Vector2(-2893, -4767)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky17" type="Sprite2D" parent="."]
+position = Vector2(37, -4873)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky18" type="Sprite2D" parent="."]
+position = Vector2(2710, -5069)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky19" type="Sprite2D" parent="."]
+position = Vector2(5262, -4360)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky20" type="Sprite2D" parent="."]
+position = Vector2(5277, -6142)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky21" type="Sprite2D" parent="."]
+position = Vector2(7784, -6036)
+texture = ExtResource("1_tv8vy")
+
+[node name="StarSky22" type="Sprite2D" parent="."]
+position = Vector2(7935, -4616)
+texture = ExtResource("1_tv8vy")
