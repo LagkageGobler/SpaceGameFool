@@ -21,11 +21,21 @@ func _process(delta: float) -> void:
 		rotation_degrees += 1
 	elif Input.is_action_pressed("Leftthrust"):
 		rotation_degrees -= 1
-		print(rotation_degrees)
 		
 	
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	if velocity <= Vector2(100,100) and rotation_degrees < 15 and rotation_degrees > -15:
-		get_tree().change_scene_to_file("res://win menu.tscn")
+	if velocity <= Vector2(12,12) and rotation_degrees < 15 and rotation_degrees > -15:
+		velocity = Vector2.ZERO
+		$WTimer.start(0.3)
 	else:
-		get_tree().change_scene_to_file("res://lose_menu.tscn")
+		velocity = Vector2.ZERO
+		$LTimer.start(0.3)
+
+
+
+func _on_l_timer_timeout() -> void:
+	get_tree().change_scene_to_file("res://lose_menu.tscn")
+
+
+func _on_w_timer_timeout() -> void:
+	get_tree().change_scene_to_file("res://win menu.tscn")
