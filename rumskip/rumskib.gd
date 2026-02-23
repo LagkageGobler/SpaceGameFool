@@ -22,7 +22,6 @@ func _process(delta: float) -> void:
 	elif Input.is_action_pressed("Leftthrust"):
 		rotation_degrees -= 1
 	
-
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if get_velocity() <= Vector2(10,10) and rotation_degrees < 30 and rotation_degrees > -30:
 		pass
