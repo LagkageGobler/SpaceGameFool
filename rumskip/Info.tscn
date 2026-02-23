@@ -14,12 +14,12 @@ grow_vertical = 2
 script = ExtResource("1_f5csn")
 
 [node name="StarSky" type="Sprite2D" parent="."]
-position = Vector2(-24, 712)
+position = Vector2(168, 737)
 texture = ExtResource("2_svu3o")
 
 [node name="MellemMaget" type="Sprite2D" parent="."]
-position = Vector2(190, 242)
-scale = Vector2(0.1, 0.1)
+position = Vector2(172, 229)
+scale = Vector2(0.19, 0.19)
 texture = ExtResource("3_k7g2g")
 
 [node name="Back" type="Button" parent="."]
@@ -32,9 +32,22 @@ text = "Back"
 
 [node name="TextEdit" type="TextEdit" parent="."]
 layout_mode = 0
-offset_left = 596.0
-offset_top = 121.0
-offset_right = 982.0
-offset_bottom = 453.0
+offset_left = 627.0
+offset_top = 125.0
+offset_right = 1186.0
+offset_bottom = 559.0
+theme_override_font_sizes/font_size = 23
+text = "How to play:
+The space ship has 4 levels of speed, that
+increase when you press W and decrease when
+you press S. And with A and D  you can control
+the rotation of the ship.
+
+Your goal is to land on the moon with the 
+spaceship intact. You do that by having the 
+spaceships rotation to be under 30 degrees and, 
+a velocity under 10.
+
+Good luck"
 
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
