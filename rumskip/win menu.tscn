@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=3 uid="uid://bm1v2v2jsewp4"]
+
+[ext_resource type="Script" path="res://win_menu.gd" id="1_3rpco"]
+[ext_resource type="Texture2D" uid="uid://bjumgm38goq7v" path="res://rumskip/star sky.jpg" id="1_d81nj"]
+[ext_resource type="Texture2D" uid="uid://837huuusf5k3" path="res://rumskip/moon.png" id="2_eps5f"]
+[ext_resource type="Texture2D" uid="uid://bt6fwsdkhei3e" path="res://rumskip/flot rumskip.png" id="3_rj8d1"]
+
+[sub_resource type="Theme" id="Theme_i77fk"]
+/fonts/20 = null
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3rpco")
+
+[node name="StarSky" type="Sprite2D" parent="."]
+position = Vector2(1214, 130)
+texture = ExtResource("1_d81nj")
+
+[node name="Moon" type="Sprite2D" parent="."]
+position = Vector2(807, 425)
+texture = ExtResource("2_eps5f")
+
+[node name="FlotRumskip" type="Sprite2D" parent="."]
+position = Vector2(720, 605)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_rj8d1")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 553.0
+offset_top = 220.0
+offset_right = 905.0
+offset_bottom = 297.0
+theme = SubResource("Theme_i77fk")
+theme_override_colors/font_readonly_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 33
+text = "You landet sucsesfuli"
+editable = false
+
+[node name="back to menu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 682.0
+offset_right = 448.0
+offset_bottom = 802.0
+theme_override_font_sizes/font_size = 28
+text = "Back to menu"
+
+[node name="go agen" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1171.0
+offset_top = 702.0
+offset_right = 1443.0
+offset_bottom = 800.0
+theme_override_font_sizes/font_size = 28
+text = "go agen"
+
+[connection signal="pressed" from="back to menu" to="." method="_on_back_to_menu_pressed"]
+[connection signal="pressed" from="go agen" to="." method="_on_go_agen_pressed"]

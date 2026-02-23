@@ -12,8 +12,8 @@ size = Vector2(200, 200)
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(0.1, 0.1)
-motion_mirroring = Vector2(2000, 2000)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(3000, 2000)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(-13, -81)
