@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvfyo7uhley4b"]
+
+[ext_resource type="Script" path="res://lose_menu.gd" id="1_65d1h"]
+[ext_resource type="Texture2D" uid="uid://bjumgm38goq7v" path="res://rumskip/star sky.jpg" id="1_rxsoh"]
+[ext_resource type="Texture2D" uid="uid://837huuusf5k3" path="res://rumskip/moon.png" id="2_gmc5q"]
+[ext_resource type="Texture2D" uid="uid://bkn1abydwm83p" path="res://rumskip/død.png" id="3_2gltd"]
+
+[node name="lose menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_65d1h")
+
+[node name="StarSky" type="Sprite2D" parent="."]
+position = Vector2(1212, 309)
+texture = ExtResource("1_rxsoh")
+
+[node name="Moon" type="Sprite2D" parent="."]
+position = Vector2(802, 429)
+texture = ExtResource("2_gmc5q")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 643.0
+offset_top = 220.0
+offset_right = 934.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "you dead bro"
+
+[node name="Død" type="Sprite2D" parent="."]
+position = Vector2(862, 569)
+rotation = 2.75238
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_2gltd")
+
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 590.0
+offset_right = 470.0
+offset_bottom = 701.0
+theme_override_font_sizes/font_size = 28
+text = "Back to menu"
+
+[node name="start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1271.0
+offset_top = 593.0
+offset_right = 1503.0
+offset_bottom = 703.0
+text = "start agen"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
