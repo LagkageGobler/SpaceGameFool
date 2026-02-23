@@ -22,7 +22,7 @@ position = Vector2(553, 246)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_wljqy")
 
-[node name="Button" type="Button" parent="."]
+[node name="start" type="Button" parent="."]
 layout_mode = 0
 offset_left = 37.0
 offset_top = 84.0
@@ -46,5 +46,6 @@ offset_right = 231.0
 offset_bottom = 482.0
 text = "Quit"
 
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Info" to="." method="_on_info_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
