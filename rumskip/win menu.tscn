@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bm1v2v2jsewp4"]
+[gd_scene load_steps=6 format=3 uid="uid://c3be8rk304rs4"]
 
 [ext_resource type="Script" path="res://win_menu.gd" id="1_3rpco"]
 [ext_resource type="Texture2D" uid="uid://bjumgm38goq7v" path="res://rumskip/star sky.jpg" id="1_d81nj"]
@@ -34,12 +34,12 @@ texture = ExtResource("3_rj8d1")
 layout_mode = 0
 offset_left = 553.0
 offset_top = 220.0
-offset_right = 905.0
+offset_right = 959.0
 offset_bottom = 297.0
 theme = SubResource("Theme_i77fk")
 theme_override_colors/font_readonly_color = Color(0, 1, 0, 1)
 theme_override_font_sizes/font_size = 33
-text = "You landet sucsesfuli"
+text = "You landed successfully!!"
 editable = false
 
 [node name="back to menu" type="Button" parent="."]
