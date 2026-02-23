@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 var Thrust = 0
+var Burn = 0
 const Gravity = 20
 
 func _ready() -> void:
@@ -13,16 +14,23 @@ func _physics_process(delta: float) -> void:
 
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("Thrust") and Thrust <= 30:
-		Thrust += 10
-	elif Input.is_action_just_pressed("Dethrust") and Thrust >= 10:
-		Thrust -= 10
-	if Input.is_action_pressed("Rightthrust"):
-		rotation_degrees += 1
-	elif Input.is_action_pressed("Leftthrust"):
-		rotation_degrees -= 1
-		
+	if $CanvasLayer/Control/fuel.value > 0:
+		if Input.is_action_just_pressed("Thrust") and Thrust <= 30:
+			Thrust += 10
+			Burn += 1
+		elif Input.is_action_just_pressed("Dethrust") and Thrust >= 10:
+			Thrust -= 10
+			Burn -= 1
+		if Input.is_action_pressed("Rightthrust"):
+			rotation_degrees += 1
+		elif Input.is_action_pressed("Leftthrust"):
+			rotation_degrees -= 1
+	else:
+		Thrust = 0
+	$CanvasLayer/Control/fuel.value -= Burn
 	
+
+
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if velocity <= Vector2(12,12) and rotation_degrees < 15 and rotation_degrees > -15:
 		velocity = Vector2.ZERO
