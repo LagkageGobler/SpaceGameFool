@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var Thrust = 0
 var Burn = 0
-const Gravity = 20
+const Gravity = 25
 
 func _ready() -> void:
 	velocity.x += randf_range(-500,600)
@@ -28,11 +28,17 @@ func _process(delta: float) -> void:
 	else:
 		Thrust = 0
 	$CanvasLayer/Control/fuel.value -= Burn
+	$"../CanvasLayer/Control/altitude".value = abs(position.y)
 	
+	$CanvasLayer/Control/velocityX.clear()
+	$CanvasLayer/Control/velocityX.text += "velocity X:" + str(int(velocity.x))
+	
+	$CanvasLayer/Control/velocityY.clear()
+	$CanvasLayer/Control/velocityY.text += "velocity Y:" + str(int(velocity.y))
 
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	if velocity <= Vector2(12,12) and rotation_degrees < 15 and rotation_degrees > -15:
+	if velocity.x < 20 and velocity.y < 30 and rotation_degrees < 15 and rotation_degrees > -15:
 		velocity = Vector2.ZERO
 		$WTimer.start(0.3)
 	else:

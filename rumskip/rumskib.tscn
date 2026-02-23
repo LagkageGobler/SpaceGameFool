@@ -70,22 +70,21 @@ offset_bottom = 371.0
 text = "fuel"
 selecting_enabled = false
 
-[node name="altitude" type="VSlider" parent="CanvasLayer/Control"]
+[node name="velocityX" type="TextEdit" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_top = 14.0
-offset_right = 232.0
-offset_bottom = 336.0
-editable = false
-scrollable = false
+offset_left = 3.0
+offset_top = 412.0
+offset_right = 144.0
+offset_bottom = 458.0
+text = "velocity x: "
 
-[node name="TextEdit" type="TextEdit" parent="CanvasLayer/Control/altitude"]
+[node name="velocityY" type="TextEdit" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 82.0
-offset_top = 330.0
-offset_right = 184.0
-offset_bottom = 377.0
-text = "altitude: "
-selecting_enabled = false
+offset_left = 5.0
+offset_top = 473.0
+offset_right = 146.0
+offset_bottom = 515.0
+text = "velocity y:"
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="WTimer" to="." method="_on_w_timer_timeout"]

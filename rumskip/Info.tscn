@@ -46,7 +46,7 @@ the rotation of the ship.
 Your goal is to land on the moon with the 
 spaceship intact. You do that by having the 
 spaceships rotation to be under 30 degrees and, 
-a velocity under 10.
+a y velocity under 30 and a x velocity under 20.
 
 Good luck"
 
