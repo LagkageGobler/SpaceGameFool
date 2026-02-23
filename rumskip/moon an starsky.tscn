@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://drt3r25c5eq3k" path="res://rumskib.tscn" id="3_kym7l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l6qca"]
-size = Vector2(200, 200)
+size = Vector2(1e+10, 17384)
 
 [node name="Node2D" type="Node2D"]
 
@@ -26,12 +26,11 @@ motion_mirroring = Vector2(1500, 0)
 texture = ExtResource("2_tnw2p")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2(200, 0)
 
 [node name="Area2D" type="Area2D" parent="ParallaxBackground/ParallaxLayer3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ParallaxBackground/ParallaxLayer3/Area2D"]
-position = Vector2(-693, 368)
+position = Vector2(2102, 8930)
 shape = SubResource("RectangleShape2D_l6qca")
 
 [node name="Rumskib" parent="." instance=ExtResource("3_kym7l")]

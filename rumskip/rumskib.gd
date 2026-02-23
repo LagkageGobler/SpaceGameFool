@@ -4,7 +4,7 @@ var Thrust = 0
 const Gravity = 20
 
 func _ready() -> void:
-	velocity.x += randf_range(-50,60)
+	velocity.x += randf_range(-500,600)
 
 func _physics_process(delta: float) -> void:
 	velocity.y += Gravity * delta
@@ -21,9 +21,11 @@ func _process(delta: float) -> void:
 		rotation_degrees += 1
 	elif Input.is_action_pressed("Leftthrust"):
 		rotation_degrees -= 1
+		print(rotation_degrees)
+		
 	
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	if get_velocity() <= Vector2(10,10) and rotation_degrees < 30 and rotation_degrees > -30:
-		pass
+	if velocity <= Vector2(100,100) and rotation_degrees < 15 and rotation_degrees > -15:
+		get_tree().change_scene_to_file("res://win menu.tscn")
 	else:
-		pass
+		get_tree().change_scene_to_file("res://lose_menu.tscn")
