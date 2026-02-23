@@ -1,5 +1,5 @@
 extends CharacterBody2D
-var sprite = 0
+
 var Thrust = 0
 const Gravity = 20
 
@@ -21,7 +21,10 @@ func _process(delta: float) -> void:
 		rotation_degrees += 1
 	elif Input.is_action_pressed("Leftthrust"):
 		rotation_degrees -= 1
-	if Thrust == 0:
-		hide()
-		show()
 	
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	if get_velocity() <= Vector2(10,10) and rotation_degrees < 30 and rotation_degrees > -30:
+		pass
+	else:
+		pass
